@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
 
-function App() {
+import React from 'react';
+import styled from 'styled-components';
+import TodoList from './components/TodoList';
+
+const AppWrapper = styled.div`
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #0c0c0c;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+`;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppWrapper>
+      <TodoList />
+    </AppWrapper>
   );
-}
+};
 
 export default App;
