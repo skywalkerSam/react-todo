@@ -1,6 +1,6 @@
 {
-  "name": "todo-app-0",
-  "homepage": "https://skywalkerSam.github.io/todo-app-0",
+  "name": "react-todo",
+  "homepage": "https://skywalkerSam.github.io/react-todo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
