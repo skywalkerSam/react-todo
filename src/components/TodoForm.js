@@ -16,6 +16,7 @@ const Input = styled.input`
   background-color: transparent;
   color: #fff;
   font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
   border-bottom: 2px solid #fff;
   outline: none;
 `;
@@ -26,6 +27,7 @@ const SubmitButton = styled.button`
   border: none;
   padding: 10px 15px;
   font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
   cursor: pointer;
 `;
 

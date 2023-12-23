@@ -17,6 +17,7 @@ const Checkbox = styled.input`
 
 const Title = styled.p`
   font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
   color: #fff;
   text-decoration: ${({ completed }) => (completed ? 'line-through' : 'none')};
 `;
@@ -27,6 +28,7 @@ const DeleteButton = styled.button`
   color: #fff;
   cursor: pointer;
   font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
 
