@@ -1,12 +1,12 @@
-// TodoForm.js
-
+// TodoForm.jsx
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const FormWrapper = styled.form`
+  background-color: transparent;
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  color: red;
 `;
 
 const Input = styled.input`
@@ -14,21 +14,22 @@ const Input = styled.input`
   padding: 10px;
   border: none;
   background-color: transparent;
-  color: #fff;
+  color: red;
   font-size: 1.2rem;
-  font-family: 'Roboto', sans-serif;
   border-bottom: 2px solid #fff;
   outline: none;
 `;
 
 const SubmitButton = styled.button`
-  background-color: #fff;
-  color: #000;
-  border: none;
+  background-color: transparent;
+  color: greenyellow;
+  border: 2px solid red;
+  border-radius: 15px;
   padding: 10px 15px;
   font-size: 1.2rem;
-  font-family: 'Roboto', sans-serif;
   cursor: pointer;
+  font-weight: semi-bold;
+  }
 `;
 
 const TodoForm = ({ addTodo }) => {
@@ -50,11 +51,12 @@ const TodoForm = ({ addTodo }) => {
     <FormWrapper onSubmit={handleSubmit}>
       <Input
         type="text"
-        placeholder="Enter a task..."
+        color="red"
+        placeholder="Write something here..."
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
-      <SubmitButton type="submit">Add Task</SubmitButton>
+      <SubmitButton type="submit">Add Task!</SubmitButton>
     </FormWrapper>
   );
 };

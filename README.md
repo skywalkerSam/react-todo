@@ -1,1 +1,1 @@
-# ToDo application with React
+# TODO application made with React

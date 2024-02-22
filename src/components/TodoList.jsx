@@ -1,5 +1,4 @@
-// TodoList.js
-
+// TodoList.jsx
 import React, { useState } from 'react';
 import TodoItem from './TodoItem';
 import TodoForm from './TodoForm';
@@ -24,10 +23,10 @@ const TodoList = () => {
   };
 
   return (
-    <div>
-      <h1>Todo App</h1>
+    <div className='mt3'>
       <TodoForm addTodo={addTodo} />
       <div className="todo-list">
+        {/* <h2 className='mt3'>Current Tasks</h2> */}
         {todos.map((todo) => (
           <TodoItem
             key={todo.id}

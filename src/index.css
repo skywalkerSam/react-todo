@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #000;
+  background-color: black;
 }
 
 .app {
@@ -12,7 +12,7 @@ body {
 }
 
 .todo-list {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .todo-item {
@@ -21,7 +21,7 @@ body {
 }
 
 .todo-item p {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .todo-item.completed p {
@@ -38,15 +38,15 @@ input[type='text'] {
   padding: 10px;
   border: none;
   background-color: transparent;
-  color: #fff;
+  color: greenyellow;
   font-size: 1.2rem;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid red;
   outline: none;
 }
 
 button {
-  background-color: #fff;
-  color: #000;
+  background-color: transparent;
+  color: red;
   border: none;
   padding: 10px 15px;
   font-size: 1.2rem;
